@@ -1,0 +1,32 @@
+.title__ofert{
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 28px;
+	padding-top: 30px;
+	color: var(--color-primary);;
+}
+
+.title__ofert__2{
+	font-size:48px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-top: 20px;
+	margin-bottom: 28px;
+}
+
+
+.row__custom{
+	position:relative;
+	display: flex;
+	gap:1rem;
+	overflow:hidden;
+	z-index:2;
+
+	@media screen and (max-width: 768px){
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+

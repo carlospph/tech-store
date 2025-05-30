@@ -1,0 +1,33 @@
+.destaqueIcones{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:1rem;
+	padding-bottom: 2rem;
+	text-align:center;
+}
+
+.card__icone{
+	border-radius: 50%;
+	height: 138px;
+}
+
+.icone{
+	width:64;
+	height:64;
+}
+
+.icone img{
+	background: var(--white);
+	width:80%;
+	object-fit: cover;
+	padding: .7rem;
+	border-radius: 50%;
+ }
+
+.card__title{
+	margin-top:.5em;
+	font-size: 14px;
+	font-weight: 700;
+	color:var(--black-leve);
+}

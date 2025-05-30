@@ -1,0 +1,10 @@
+.campos{
+  width: 100%;
+}
+.campos input{
+  height: 45px;
+  padding: 0 .4rem;
+  border-radius: 6px;
+  border: 1px solid grey;
+  width: 100%;
+}

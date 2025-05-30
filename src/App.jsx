@@ -1,9 +1,13 @@
-import './App.css'
+import './App.css';
 
-export default function App() {
+import { Paths } from './route/Paths';
+
+function App() {
   return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit
-    </main>
-  )
+    <>
+      <Paths/>  
+    </>
+  );
 }
+
+export default App;

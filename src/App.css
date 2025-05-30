@@ -1,2 +1,65 @@
-main {
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ 
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root{
+  --primary:#C92071;
+  --warning: #F6AA1C;
+  --black-leve: #474747;
+  --white: #FFFFFF;
+  --gray: #F5F5F5;
+
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-24: 24px;
+  --font-32: 32px;
+  --font-48: 48px;
+  --font-64: 64px;
+}
+
+/* Página de erro erro  */
+.title__erro{
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.image__erro{
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+/* font do item sessão  */
+.fontStyle{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  padding-top: 30px;
+}
+
+.container__custom{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  }
+
+p{
+  margin:0;
+  padding:0;
+}
+
+.white{
+  background-color: var(--white);
 }

@@ -1,0 +1,55 @@
+ 
+.header {
+  background-color: #ffffff;
+  padding: 2rem .5em 0 .5em;
+  box-shadow: 0 3px 3px 3px #ccc;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 1.2rem; 
+}
+
+.logo{
+   width: 253px;
+   height: 44px;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5em;
+  padding: 1.6rem 0;
+}
+
+.nav__item {
+  color: black;
+}
+
+.Link__button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.link__link {
+  color: #000;
+  white-space: nowrap;
+}
+
+.btn {
+  background-color: #c92071;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+
+ .icone__carrinho{
+    width: 35px;
+
+ }
