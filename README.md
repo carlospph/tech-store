@@ -16,6 +16,6 @@ Público no versionador GITHUB e Deployd no vercel, com o domínio: https://digi
 
 
 ## REFERÊNCIAS
--Curso da geração tech 2.0
+-Curso da geração tech 2.0 <br/>
 -Gustavo Guanabara - Youtube
 -Cursos básicos da Alura (Html5, Css3, CSS Flex, CSS Grid)
