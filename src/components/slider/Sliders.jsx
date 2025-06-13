@@ -1,86 +1,75 @@
-
-import React, { useState } from 'react';
+// imports responsaveis pelos slides
+// import Swiper core and required modules
+import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import './Sliders.css';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+// Dados dos slides em um array de objetos
+const slideData = [
+	{
+		id: 1,
+		smallTitle: "Ofertas especiais de tênis e calçados",
+		mainTitle: "Queima de stoque Nike",
+		description: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
+		buttonText: "Ver oferta",
+		imageSrc: "/tenis__1.png",
+		imageAlt: "Tênis esportivo branco",
+	},
+	{
+		id: 2,
+		smallTitle: "Modelos exclusivos de tênis",
+		mainTitle: "Modelo para exigentes",
+		description: "Calçando bem para quem quer um modelo que faça seu estilo para o cotidiano e para chamar atenção.",
+		buttonText: "Ver oferta",
+		imageSrc: "/tenis___2.png",
+		imageAlt: "Tênis casual cinza e rosa",
+	},
+	{
+		id: 3,
+		smallTitle: "Modelos para o cotidiano",
+		mainTitle: "Quem busca conforto diário",
+		description: "Ao público que busca conforto e estilo, o tênis é uma escolha essencial. Ele oferece suporte e conforto.",
+		buttonText: "Ver oferta",
+		imageSrc: "/tenis__44.png",
+		imageAlt: "Tênis moderno preto",
+	},
+];
+
+// componente padrão
 export const Sliders = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      id: 1,
-      image: "/home-slide-1.jpeg",
-      title: "Queima de estoque Nike 🔥",
-      subtitle: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
-      buttonText: "Ver Ofertas"
-    },
-    {
-      id: 2,
-      image: "/home-slide-2.jpeg",
-      title: "Coleção Adidas",
-      subtitle: "Morbi quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia.",
-      buttonText: "Ver Ofertas"
-    },
-    {
-      id: 3,
-      image: "/home-slide-3.jpeg",
-      title: "Novo Drop Supreme 🔥",
-      subtitle: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
-      buttonText: "Ver Ofertas"
-    }
-  ];
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
-  return (
-    <div className="slider-container">
-      <div className="slider-wrapper">
-        <div 
-          className="slides" 
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-        >
-          {slides.map((slide, index) => (
-            <div key={slide.id} className="slide">
-              <div className="slide-content">
-                <div className="slide-text">
-                  <h1>{slide.title}</h1>
-                  <p>{slide.subtitle}</p>
-                  <button className="slide-button">{slide.buttonText}</button>
-                </div>
-                <div className="slide-image">
-                  <img src={slide.image} alt={`Slide ${slide.id}`} />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        <button className="nav-button prev" onClick={prevSlide}>
-          ❮
-        </button>
-        <button className="nav-button next" onClick={nextSlide}>
-          ❯
-        </button>
-      </div>
-      
-      <div className="slide-indicators">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`indicator ${index === currentSlide ? 'active' : ''}`}
-            onClick={() => goToSlide(index)}
-          />
-        ))}
-      </div>
-    </div>
-  );
+	return (
+		<div className="container">
+ 		<Swiper
+			// install Swiper modules
+			modules={[Navigation, Pagination, A11y]}
+			spaceBetween={50}
+			slidesPerView={1}
+			navigation
+			pagination={{ clickable: true }}
+		>
+			{/* Mapeia os dados para renderizar os SwiperSlides */}
+			{slideData.map((slide) => (
+				<SwiperSlide key={slide.id}>
+					<div className="row d-flex flex-row align-items-center container px-4">
+						<div className="col-12 col-md-6 order-2 order-md-1">
+							<h4 className="title__small__carrossel">{slide.smallTitle}</h4>
+							<h3 className="title__main__carrossel">{slide.mainTitle}</h3>
+							<p className="mb-3 py-2 description">{slide.description}</p>
+							<button className="btn btn__primary">{slide.buttonText}</button>
+						</div>
+						<div className="col-12 col-md-6 order-1 order-md-2">
+							<img src={slide.imageSrc} alt={slide.imageAlt} className='w-100'/>
+						</div>
+					</div>
+				</SwiperSlide>
+			))}
+		</Swiper>
+		</div>
+	);
 };

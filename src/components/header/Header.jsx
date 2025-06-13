@@ -1,51 +1,97 @@
-import { Link } from 'react-router-dom';
+import { CampoTexto } from "./CampoTexto";
 
-import styles from './Header.module.css';
-import { Logo } from '../logo/Logo';
-import { CampoTexto } from './CampoTexto';
-import { Link__button } from './Link__button';
+import Logo from "./Logo";
+import { useState } from "react";
+
+import { NavLink } from "react-router-dom";
+import styles from "./Header.module.css";
+import { ActionUser } from "../actionUser/ActionUser";
 
 export const Header = () => {
-  return (
-      <header className={styles.header}>
-        <div className="container__custom">
-        <nav className={styles.navbar}>
-          <Link className={styles.nav__item} to="/">
-            <Logo />
-          </Link>
+	const [openSearch, setOpenSearch] = useState(false);
+	const [openMenu, setOpenMenu] = useState(false);
 
-          <CampoTexto />
-          <Link__button />
-          <img
-            src="src/assets/carrinho.png"
-            alt="Carrinho de compras - icone"
-            className={styles.icone__carrinho}
-          />
-        </nav>
+	return (
+		<>
+			{/* menu mobile */}
+			<header>
+				<div className={styles.header}>
+					<div className={styles.header__container}>
+						{openSearch && <CampoTexto />}
+						<div className={styles.container__flex}>
+							<div className={styles.container__bars}>
+								<i
+									className="fa-solid fa-bars"
+									onClick={() => setOpenMenu(!openMenu)}
+								></i>
+							</div>
+							<Logo />
 
-        <ul className={styles.menu}>
-          <li>
-            <Link className={styles.nav__item} to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.nav__item} to="/Produtos">
-              Produtos
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.nav__item} to="/Categorias">
-              Categorias
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.nav__item} to="/MeusPedidos">
-              Produtos
-            </Link>
-          </li>
-        </ul>
-        </div>
-      </header>
-  );
+							<div className={styles.container__search}>
+								<i
+									className="fa-solid fa-search"
+									onClick={() => setOpenSearch(!openSearch)}
+								/>
+							</div>
+
+							<div className={styles.container__cart}>
+								<i className="fa-solid fa-cart-shopping" />
+							</div>
+						</div>
+					</div>
+					<div className={styles.container}>
+						{openMenu && (
+							<nav className="mt-4">
+								<ul className={styles.menu}>
+									<li>
+										<NavLink to="/">Home</NavLink>
+									</li>
+									<li>
+										<NavLink to="/produtos">Produtos</NavLink>
+									</li>
+									<li>
+										<NavLink to="/categorias">Categorias</NavLink>
+									</li>
+									<li>
+										<NavLink to="/meusPedidos">Meus pedidos</NavLink>
+									</li>
+
+									<li className={styles.user__action}>
+										<ActionUser />
+
+									</li>
+								</ul>
+							</nav>
+						)}
+					</div>
+				</div>
+			</header>
+
+			{/* menu computer */}
+			<header>
+				<div className={styles.headerComputer}>
+					<Logo />
+					<CampoTexto />
+					<ActionUser />
+					<div className={styles.container__cart}>
+						<i className="fa-solid fa-cart-shopping" />
+					</div>
+				</div>
+				 <ul className={styles.menuComputer}>
+					 <li>
+						 <NavLink className={styles.link__custom} to="/">Home</NavLink>
+					 </li>
+					 <li>
+						 <NavLink className={styles.link__custom} to="/produtos">Produtos</NavLink>
+					 </li>
+					 <li>
+						 <NavLink className={styles.link__custom} to="/categorias">Categorias</NavLink>
+					 </li>
+					 <li>
+						 <NavLink className={styles.link__custom} to="/meusPedidos">Meus pedidos</NavLink>
+					 </li>
+				 </ul>
+			</header>
+		</>
+	);
 };

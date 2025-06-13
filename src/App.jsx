@@ -1,12 +1,17 @@
-import './App.css';
+import "./App.css";
+// import DetalhesProutos from "./components/Detalhes/DetalhesProutos";
 
-import { Paths } from './route/Paths';
+import { Paths } from "./route/Paths";
 
 function App() {
   return (
     <>
-      <Paths/>  
-    </>
+        <Paths />  
+
+      {/* <DetalhesProutos/> /cada produto - cada tenis, tamanho, cor e outros/*/}
+    </> 
+
+      
   );
 }
 

@@ -25,7 +25,30 @@
   --font-64: 64px;
 }
 
-/* Página de erro erro  */
+header{
+  position:fixed;
+  width: 100%;
+  z-index:3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background:var(--white);
+}
+
+.btn__back{
+  display: block;
+  margin: 2rem auto;
+  background: var(--primary);
+  color: white;
+  padding: .6rem 1rem;
+  width: fit-content;
+}
+
+
+.btn__back:hover{
+  opacity: .8;
+  transition: .3s ease-in-out;
+}
+ 
+ 
 .title__erro{
   font-size: 2rem;
   margin: 0 auto;
@@ -62,4 +85,89 @@ p{
 
 .white{
   background-color: var(--white);
+}
+
+ .ptt{
+   padding: 7rem 0 0 0;
+   margin: 0 auto;
+   max-width: 1440px;
+ }
+
+
+.border__input{
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  height: 45px;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 .4rem;
+
+  @media (max-width: 769px){
+    border:0;
+  }
+}
+
+.border__input input{
+  width: 100%;
+  outline: none;
+  @media (max-width: 769px){
+   display:none;
+  }
+}
+
+.bg-primary-custom{
+  background: var(--primary);
+}
+
+.cursor__pointer{
+  cursor: pointer;
+}
+
+ 
+
+.color-primary-custom{
+  color: var(--primary);
+}
+
+
+header a{
+  text-decoration: none;
+  color: black;
+ }
+
+.fs-15{
+  font-size:1.5rem;
+}
+
+.menu{
+  background: pink;
+  position: absolute;
+  top:80px;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+.menu ul{
+  padding:0;
+  margin:0;
+}
+
+.outline{
+  outline: none;
+}
+
+  
+input{
+  height: 40px;
+}
+
+.w-nowrap{
+  white-space: nowrap;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
