@@ -13,3 +13,9 @@ Html 5, CSS3 (puro + modules.css), REACT, biblioteca Bootstrap 5
 Público no versionador GITHUB e Deployd no vercel, com o domínio: https://digital-college-blond.vercel.app
 
 ## FUNCIONALIDADES
+
+
+## REFERÊNCIAS
+-Curso da geração tech 2.0
+-Gustavo Guanabara - Youtube
+-Cursos básicos da Alura (Html5, Css3, CSS Flex, CSS Grid)
