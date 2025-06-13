@@ -2,7 +2,7 @@
 
 ## OBJETIVO
 
-##Página desenvolvida como requisito parcial para conclusão do curso da geração tech. Sendo requisito indispensável para o certificado de frontEnd e Back-end.
+Página desenvolvida como requisito parcial para conclusão do curso da geração tech. Sendo requisito indispensável para o certificado de frontEnd e Back-end.
 
 ## TECNOLOGIAS UTILIZADAS
 
