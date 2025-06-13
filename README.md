@@ -1,12 +1,15 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## OBJETIVO
 
-Currently, two official plugins are available:
+##Página desenvolvida como requisito parcial para conclusão do curso da geração tech. Sendo requisito indispensável para o certificado de frontEnd e Back-end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## TECNOLOGIAS UTILIZADAS
 
-## Expanding the ESLint configuration
+Html 5, CSS3 (puro + modules.css), REACT, biblioteca Bootstrap 5
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## DEPLOYS E DISPONIBILIDADE DO CÓDIGO
+
+Público no versionador GITHUB e Deployd no vercel, com o domínio: https://digital-college-blond.vercel.app
+
+## FUNCIONALIDADES
