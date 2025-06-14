@@ -4,7 +4,42 @@
     gap: 1.5rem;
 }
 
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap:1.6rem;
+    padding: 3rem 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+ 
+
+
+.field__filter{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.container__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+}
+
 @media screen and (min-width:320px) and (max-width:426px){
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__cards{
+        display: flex;
+        flex-direction: column;
+    }
+
     .container__home__cards{
         display: flex;
         flex-direction: column;

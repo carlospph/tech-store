@@ -1,11 +1,8 @@
-// imports responsaveis pelos slides
-// import Swiper core and required modules
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+ import { Navigation, Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './Sliders.css';
 
-// Import Swiper styles
-import 'swiper/css';
+ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';

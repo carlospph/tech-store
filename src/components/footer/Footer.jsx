@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import logo from '../../assets/icones/logo__bottom.png';
 
 export const Footer = () => {
   return (
@@ -7,7 +8,7 @@ export const Footer = () => {
         <div className={styles.row}>
           <div className={styles.footer__lema}>
             <img
-              src="src/assets/logo__bottom.png"
+              src={logo}
               alt="Logo do rodapé da página - Digital College - imagem em branco"
               className={styles.logo__bottom}
             />
