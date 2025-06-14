@@ -1,4 +1,4 @@
-.container__home__cards{
+/* .container__home__cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
@@ -15,12 +15,7 @@
 }
  
 
-
-.field__filter{
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-}
+ 
 
 .container__cards{
     display: grid;
@@ -61,4 +56,4 @@
     }
 }
 
- 
+  */

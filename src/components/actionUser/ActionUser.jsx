@@ -4,7 +4,7 @@ import styles from "./ActionUser.module.css";
 export const ActionUser = () => {
 	return(
 		<div className={styles.flex__actionUser}>
-			 <Link to="/RegisterUser" className={styles.link__register}> Cadastre-se</Link>
+			 <Link to="/NewUser" className={styles.link__register}> Cadastre-se</Link>
 			 <Link to="/Login" className={styles.link__btn}> Entrar </Link>
 		</div>
 	)

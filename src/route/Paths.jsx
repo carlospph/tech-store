@@ -3,8 +3,8 @@ import { Home } from "../pages/Home";
 import { Produtos } from "../pages/Produtos";
 import { Erro } from "../pages/Erro";
 import { Produto } from "../components/produto/Produto";
-import { RegisterUser } from "../pages/RegisterUser";
- 
+import { NewUser } from "../pages/NewUser";
+  
 export const Paths = () => {
   return (
     <>
@@ -13,7 +13,7 @@ export const Paths = () => {
       <Route path="/" element={<Home/>}/>
       <Route path="/produtos" element={<Produtos/>}/>
       <Route path="/produto/:id" element={<Produto/>}/>
-      <Route path="/RegisterUser" element={<RegisterUser/>}/>
+       <Route path="/NewUser" element={<NewUser/>}/>
       <Route path="*" element={<Erro/>}/>
       </Routes>
     </BrowserRouter>
