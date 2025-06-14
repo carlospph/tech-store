@@ -14,8 +14,11 @@ Público no versionador GITHUB e Deployd no vercel, com o domínio: https://digi
 
 ## FUNCIONALIDADES
 
+## UI - INTERFACE DE USUÁRIO
+O site permite que o usuário tenho tenha um boa experiência com o sistema. Podente o usuário ter qualidade de experiência acessando via computador, tablete e celular. Isso é permitido porque o código/desenvolvimento é baseado na responsividade ().
 
 ## REFERÊNCIAS
--Curso da geração tech 2.0 <br/>
--Gustavo Guanabara - Youtube
--Cursos básicos da Alura (Html5, Css3, CSS Flex, CSS Grid)
+-Curso da geração tech 2.0; <br/>
+-Gustavo Guanabara - Youtube; <br/>
+-Cursos básicos da Alura (Html5, Css3, CSS Flex, CSS Grid); <br/>
+-Documentos officiais acessados em: https://developer.mozilla.org;
