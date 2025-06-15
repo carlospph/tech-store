@@ -8,11 +8,13 @@ import { Card } from "../components/card/Card";
 import { OfertSpecials } from "../components/ofertSpecials/OfertSpecials";
 
 import { Sliders } from "../components/slider/Sliders";
+import { Filter } from './Filter';
 export const Home = () => {
   return (
     <div>
       <Layout>
 
+ 
 
         <Sliders />
 
@@ -39,7 +41,7 @@ export const Home = () => {
           size="fontStyle"
         >
 
-          <div className={styles.container__home__cards}>
+          <div className={styles.container__cards}>
             <Card />
           </div>
 

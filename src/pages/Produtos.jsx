@@ -1,14 +1,21 @@
 import { Card } from "../components/card/Card"
 import { Filter } from "./Filter"
-import Layout from "./Layout"
+import Layout from "./Layout";
+ 
 
+  
 export const Produtos = () => {
 
-  return(
+  return (
 
     <Layout>
+
       <Filter/>
-      <Card/>
+
+        
+      {/* <Card /> */}
+
+ 
     </Layout>
   )
 }
