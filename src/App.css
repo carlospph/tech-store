@@ -25,13 +25,7 @@
   --font-64: 64px;
 }
 
-header{
-  position:fixed;
-  width: 100%;
-  z-index:3;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  background:var(--white);
-}
+
 
 .btn__back{
   display: block;
@@ -53,7 +47,7 @@ header{
   font-size: 2rem;
   margin: 0 auto;
   text-align: center;
-  padding-top: 2rem;
+  padding: 1em 1em;
 }
 
 .image__erro{
@@ -88,9 +82,13 @@ p{
 }
 
  .ptt{
-   padding: 7rem 0 0 0;
+   padding: 10.5rem 0 0 0;
    margin: 0 auto;
    max-width: 1440px;
+
+   @media (max-width: 769px){
+    padding: 4.7rem 0  0 0;
+  }
  }
 
 
@@ -128,32 +126,13 @@ p{
 .color-primary-custom{
   color: var(--primary);
 }
-
-
-header a{
-  text-decoration: none;
-  color: black;
- }
+ 
 
 .fs-15{
   font-size:1.5rem;
 }
 
-.menu{
-  background: pink;
-  position: absolute;
-  top:80px;
-  left:0;
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-}
-
-.menu ul{
-  padding:0;
-  margin:0;
-}
-
+ 
 .outline{
   outline: none;
 }

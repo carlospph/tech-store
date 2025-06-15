@@ -36,10 +36,10 @@ const Container = styled.div`
 	margin:0 auto;
 	max-width:660px;
 
-		@media (max-width: 769px){
+		@media (max-width: 600px){
 			overflow: hidden;
 			overflow-x: auto;
-			padding:1rem 1.5em 1rem 8em;
+			padding:1rem 1.5em 1rem 10em;
 		}
  `;
 

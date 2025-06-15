@@ -33,11 +33,6 @@
 .text__carrossel{
 	font-size: var(--font-18);
 	line-height: 34px;
-	
-	@media (max-width: 769px){
-		text-align: center;
-		margin: 0 auto;
-	}
 }
 
 .btn__primary{
@@ -55,15 +50,19 @@
 @media (min-width: 320px) and (max-width: 769px){
 	.title__main__carrossel{
  		text-align: center;
-		font-size: 48px;
+		font-size: 45px;
 		line-height: 100%;
 	}
-
-	 .text__carrossel{
-		border: 3px solid red;
-	 }
 
 	 .description{
 		text-align: center;
 	 }
+}
+
+@media (min-width:769px){
+	.title__main__carrossel{
+		text-align: left;
+		font-size: 40px;
+		line-height: 100%;
+	}
 }

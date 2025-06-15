@@ -14,8 +14,7 @@ export const Footer = () => {
             />
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore.
+              Por: Antonio Carlos Pereira do Nascimento - PcD oculta. Projeto final para obtenção da nota do curso stack full Geração Tech 2.0.
             </p>
           </div>
 

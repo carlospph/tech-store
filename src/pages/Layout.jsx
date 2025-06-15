@@ -1,12 +1,12 @@
 // Layout.jsx
 import React from 'react';
-import { Header } from '../components/header/Header';
-import { Footer } from '../components/footer/Footer';
+ import { Footer } from '../components/footer/Footer';
+import { Headerversion } from '../components/header/Headerversion';
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Header />
+       <Headerversion/>
       <div className="ptt"/>
       {children}
       <Footer />
