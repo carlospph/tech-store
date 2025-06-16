@@ -1,27 +1,49 @@
 import { NavLink } from "react-router-dom"
 import './Header.css';
 import logotop from "../../assets/icones/logo-header.svg";
-
+import { ActionUser } from "../actionUser/ActionUser";
+ 
+ 
+ 
 export const Headerversion = () => {
     return (
-<>
-        <img src={logotop} className="logo"/>
-        <ul className="menu">
-                 <li>
-                 <NavLink className="link" to="/">Home</NavLink>
+        <header>
 
-                 </li>
-                 <li>
-                 <NavLink className="link" to="/Produtos">produtos</NavLink>
+            <div className="header-container">
 
+                <i className="fa-solid fa-bars hamburguer"></i>
 
-                 </li>
-                 <li>
+                <img src={logotop} className="logo logomarca"/>
 
-                 <NavLink className="link" to="/Categorias">Categorias</NavLink>
+                <div className="field">
+                    <input type="text" placeholder="Buscar"/>
+                    <i className="fa-solid fa-search"></i>
+                </div>
+                
+                <div className="actions">
+                    <ActionUser/>
+                </div>
 
-                 </li>
-         </ul>
-         </>
+                <i className="fa-solid fa-cart-shopping carrinho" />
+                <i className="fa-solid fa-search btnSearch" />
+
+            </div>
+
+            <div className="container-menu">
+
+                <ul className="menu">
+                    <li>
+                        <NavLink className="link" to="/">Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="link" to="/Produtos">Produtos</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="link" to="/Categorias">Categorias</NavLink>
+                    </li>
+                </ul>
+
+            </div>
+        </header>
     )
 }

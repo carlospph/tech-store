@@ -91,27 +91,7 @@ p{
   }
  }
 
-
-.border__input{
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  height: 45px;
-  width: 100%;
-  max-width: 300px;
-  padding: 0 .4rem;
-
-  @media (max-width: 769px){
-    border:0;
-  }
-}
-
-.border__input input{
-  width: 100%;
-  outline: none;
-  @media (max-width: 769px){
-   display:none;
-  }
-}
+ 
 
 .bg-primary-custom{
   background: var(--primary);
@@ -122,7 +102,6 @@ p{
 }
 
  
-
 .color-primary-custom{
   color: var(--primary);
 }
