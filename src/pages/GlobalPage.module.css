@@ -9,8 +9,23 @@
   margin: 1rem 0;
   padding: 1rem 2rem;
   min-width: 100%;
+
+    @media (max-width:769px){
+      display: none;
+    }
 }
 
+h3.titleFilter{
+  padding: 2rem 0 .4rem 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.548);
+  width: fit-content;
+}
+
+h4.titleFilter{
+  margin: 1.6rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 .dflex {
   display: flex;
@@ -21,6 +36,7 @@
 .checkbox,
 .label {
   width: auto;
+  font-weight: 500;
 }
 
 .checkbox {
@@ -41,6 +57,25 @@
   gap: 1rem;
 }
 
+.btnFilter{
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: .3rem;
+  margin: .3rem auto;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 2px #ccc;
+        max-width: 320px;
+        margin: 0 0 1rem 0;
+    @media(min-width:769px){
+      display: none;
+      margin: 0 auto;
+    }
+
+}
+
 @media (min-width:769px) {
   .container__cards {
     max-width: 640px;
@@ -54,7 +89,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-  }
+   }
 
   .sidebar{
     margin-top: 0;
@@ -98,7 +133,7 @@
   .container__page__filter {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 

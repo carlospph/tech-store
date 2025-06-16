@@ -1,16 +1,15 @@
 import React from 'react';
-import { Card } from '../components/card/Card'; // Importando seu componente Card
-import styles from './GlobalPage.module.css'; // Importando seu módulo CSS Modules
+import { Card } from '../components/card/Card'; 
+import styles from './GlobalPage.module.css';
 
 export const Filter = () => {
   return (
     <div>
       <div className={styles.container__page__filter}>
         <div className={styles.sidebar}>
-          <h3>Pesquisar por: </h3>
+          <h3 className={styles.titleFilter}>Pesquisar por: </h3>
 
-          {/* --- Filtro por Marca --- */}
-          <h4>Marca</h4>
+           <h4 className={styles.titleFilter}>Marca</h4>
           
           <div className={styles.dflex}>
             <input type="checkbox" name="brand" id="nike-brand" className={styles.checkbox} />
@@ -33,7 +32,7 @@ export const Filter = () => {
           </div>
 
           {/* --- Filtro por Categoria --- */}
-          <h4>Categorias</h4>
+          <h4 className={styles.titleFilter}>Categorias</h4>
 
           <div className={styles.dflex}>
             <input type="checkbox" name="category" id="shoes-category" className={styles.checkbox} />
@@ -50,18 +49,19 @@ export const Filter = () => {
             <label htmlFor="accessories-category" className={styles.label}>Acessórios</label>
           </div>
 
-          {/* Adicione mais categorias se desejar, seguindo o padrão */}
-          <div className={styles.dflex}>
+           <div className={styles.dflex}>
             <input type="checkbox" name="category" id="sportswear-category" className={styles.checkbox} />
             <label htmlFor="sportswear-category" className={styles.label}>Esportivo</label>
-          </div>
+          </div> 
+        </div>  
 
-        </div> {/* Fim de .sidebar */}
-
+<button className={styles.btnFilter}>
+            <i className="fa-solid fa-filter"></i>
+          </button>
         <div className={styles.container__cards__filter}>
-          <Card /> {/* Seu componente Card será renderizado aqui */}
+          <Card />  
         </div>
-      </div> {/* Fim de .container__page__filter */}
+      </div>  
     </div>
   );
 };
