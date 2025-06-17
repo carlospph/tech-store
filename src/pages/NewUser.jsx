@@ -9,7 +9,6 @@ const Container = styled.div`
     margin: 1rem 0;
 `;
 
-
 export const NewUser = () => {
     return(
          <Layout>
@@ -26,5 +25,6 @@ export const NewUser = () => {
             </Container>
         </Layout>
      )
+     
 }
 
