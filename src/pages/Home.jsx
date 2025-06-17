@@ -15,7 +15,7 @@ export const Home = () => {
       <Layout>
 
  
-<main className='wrapper'>
+    <main className='wrapper'>
         <Sliders />
 
         <Section
@@ -56,7 +56,7 @@ export const Home = () => {
           <OfertSpecials />
 
         </Section>
-</main>
+  </main>
 
       </Layout>
     </div>
