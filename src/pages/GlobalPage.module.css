@@ -99,7 +99,7 @@ h4.titleFilter{
   .container__cards__filter {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.2rem;
   }
 }
 
