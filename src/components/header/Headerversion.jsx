@@ -48,9 +48,7 @@ export const Headerversion = () => {
 
                 <i className="fa-solid fa-cart-shopping carrinho" />
                 <i className="fa-solid fa-search btnSearch" onClick={() => setSearch(!search)} />
-
             </div>
-
 
 
              {menu && (

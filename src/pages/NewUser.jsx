@@ -1,4 +1,4 @@
-import FormCadastro from "../components/FormCadastro/FormCadastro.jsx";
+import FormCadastro from "../components/formCadastro/FormCadastro.jsx";
 import { Section } from "../components/section/Section";
 import Layout from "./Layout.jsx";
 import styled from 'styled-components';
