@@ -5,16 +5,16 @@ import produtos from './dados.json';
 
 export const Produto = () => {
 	const params = useParams();
-	const produto = produtos.find((produto)=>{return produto.id===params.id});
+	const produto = produtos.find((produto)=> { return produto.id === params.id});
+	console.log(produto);
 
-	
 	return (
 		<>
 			<Layout>
 				<div>
 
-					meu Produto {id}
-
+					{produto.id}
+					{produto.titulo}
 
 				</div>
 			</Layout>
