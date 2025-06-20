@@ -14,10 +14,20 @@ export const Produto = () => {
 				<div>
 
 					{produto.id}
-					{produto.titulo}
+					{produto.description}
+
+
+		 {/* produto."id": "prod1001",
+        produto."imageUrl": "/tenis1.png",
+         produto."altText": "Tênis Esportivo",
+        "discount": "30% off",
+        "title": "Tênis",
+        "description": "K-Swiss V8 - Masculino",
+        "oldPrice": "R$200,00",
+        "price": "R$140,00" */}
 
 				</div>
 			</Layout>
 		</>
 	);
-}
+} 

@@ -2,83 +2,84 @@
  import { Link } from "react-router-dom";
 
  export const Card = () => {
-	 const products = [
-		 {
-			 id: 1,
-			 imageUrl: "/tenis1.png",
-			 altText: "Tênis Esportivo",
-			 discount: "30% off",
-			 title: "Tênis",
-			 description: "K-Swiss V8 - Masculino",
-			 oldPrice: "R$200,00",  
-			 price: "R$140,00"   
-		 },
-		 {
-			 id: 2,
-			 imageUrl: "/tenis2.png",
-			 altText: "Tênis Casual",
-			 discount: "25% off",
-			 title: "Tênis",
-			 description: "Nike Air Max - Feminino",
-			 oldPrice: "R$180,00", 
-			 price: "R$135,00"   
-		 },
-		 {
-			 id: 3,
-			 imageUrl: "/fonede.png",
-			 altText: "Headset fone de ouvido",
-			 title: "Headset",
-			 description: "Headset fone de ouvido",
-			 oldPrice: "R$220,00",
-			 price: "R$170,99",
-			 discount: '20% off',
-		 },
-		 {
-			 id: 4,
-			 imageUrl: "/calca1.png",
-			 altText: "Calça masculina - jeans",
-			 title: "Calça",
-			 description: "Calça jeans Masculino",
-			 oldPrice: "R$190,00", 
-			 price: "R$150,00"   
-		 },
-		 {
-			 id: 5,
-			 imageUrl: "/relogiofem.png",
-			 altText: "Relógio retrô feminino",
-			 title: "Relógio",
-			 description: "Relógio analógico feminino",
-			 oldPrice: "R$470,00",
-			 price: "R$345,00"
-		 },
-		 {
-			 id: 6,
-			 imageUrl: "/tshirt1.png",
-			 altText: "Camisa básica preta unissex",
-			 title: "Tshirt ou camisa",
-			 description: "Camisa básica preta unisse",
-			 oldPrice: "R$210,00", 
-			 price: "R$190,00"   
-		 },
-		 {
-			 id: 7,
-			 imageUrl: "/tshirt2.png",
-			 altText: "Camiseta básica feminina",
-			 title: "Tênis",  
-			 description: "Camiseta básica feminina",
-			 oldPrice: "R$350,00", 
-			 price: "R$320,00"   
-		 },
-		 {
-			 id: 8,
-			 imageUrl: "/relogio_masculino.png",
-			 altText: "Relógio masculino",
-			 title: "Relógio",
-			 description: "Relógio masculino",
-			 oldPrice: "R$240,00",
-			 price: "R$200,00"
-		 }
-	 ];
+	const products = [
+    {
+        id: "prod1001",
+        imageUrl: "/tenis1.png",
+        altText: "Tênis Esportivo",
+        discount: "30% off",
+        title: "Tênis",
+        description: "K-Swiss V8 - Masculino",
+        oldPrice: "R$200,00",  
+        price: "R$140,00"   
+    },
+    {
+        id: "prod1002",
+        imageUrl: "/tenis2.png",
+        altText: "Tênis Casual",
+        discount: "25% off",
+        title: "Tênis",
+        description: "Nike Air Max - Feminino",
+        oldPrice: "R$180,00", 
+        price: "R$135,00"   
+    },
+    {
+        id: "prod1003",
+        imageUrl: "/fonede.png",
+        altText: "Headset fone de ouvido",
+        title: "Headset",
+        description: "Headset fone de ouvido",
+        oldPrice: "R$220,00",
+        price: "R$170,99",
+        discount: '20% off',
+    },
+    {
+        id: "prod1004",
+        imageUrl: "/calca1.png",
+        altText: "Calça masculina - jeans",
+        title: "Calça",
+        description: "Calça jeans Masculino",
+        oldPrice: "R$190,00", 
+        price: "R$150,00"   
+    },
+    {
+        id: "prod1005",
+        imageUrl: "/relogiofem.png",
+        altText: "Relógio retrô feminino",
+        title: "Relógio",
+        description: "Relógio analógico feminino",
+        oldPrice: "R$470,00",
+        price: "R$345,00"
+    },
+    {
+        id: "prod1006",
+        imageUrl: "/tshirt1.png",
+        altText: "Camisa básica preta unissex",
+        title: "Tshirt ou camisa",
+        description: "Camisa básica preta unissex",
+        oldPrice: "R$210,00", 
+        price: "R$190,00"   
+    },
+    {
+        id: "prod1007",
+        imageUrl: "/tshirt2.png",
+        altText: "Camiseta básica feminina",
+        title: "Tênis",  
+        description: "Camiseta básica feminina",
+        oldPrice: "R$350,00", 
+        price: "R$320,00"   
+    },
+    {
+        id: "prod1008",
+        imageUrl: "/relogio_masculino.png",
+        altText: "Relógio masculino",
+        title: "Relógio",
+        description: "Relógio masculino",
+        oldPrice: "R$240,00",
+        price: "R$200,00"
+    }
+];
+
 
 	 return (
 		  <>
