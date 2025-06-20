@@ -6,8 +6,10 @@ import produtos from './dados.json';
 export const Produto = () => {
 	const params = useParams();
 	const produto = produtos.find((produto)=> { return produto.id === params.id});
-	console.log(produto);
 
+	if(!produto){
+		<h2>Produto não localizado</h2>
+	}
 	return (
 		<>
 			<Layout>
