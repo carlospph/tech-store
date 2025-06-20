@@ -4,27 +4,27 @@ const icones = [
 	{
 		id: 1,
 		titulo: "Tênis",
-		image: "/src/assets/icones/tenisAtivo.png",
+		image: "../../assets/icones/tenisAtivo.png",
 	},
 	{
 		id: 2,
 		titulo: "Relógio",
-		image: "/src/assets/icones/relogioAtivo.png",
+		image: "../../assets/icones/relogioAtivo.png",
 	},
 	{
 		id: 3,
 		titulo: "Calça",
-		image: "/src/assets/icones/calcaAtiva.png",
+		image: "../../assets/icones/calcaAtiva.png",
 	},
 	{
 		id: 4,
 		titulo: "Headset",
-		image: "/src/assets/icones/foneAtivo.png",
+		image: "../../assets/icones/foneAtivo.png",
 	},
 	{
 		id: 5,
 		titulo: "Camiseta",
-		image: "/src/assets/icones/camiseta.png",
+		image: "../../assets/icones/camiseta.png",
 	}
 
 ];
